@@ -1,0 +1,82 @@
+.asegurados {
+    width: 80%;
+    margin-left: 10%;
+
+    &__p{
+        padding: 20px 0;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        color: #494F66;
+        border-bottom: 1px solid #EDEFF5;
+
+        &--asegurados {
+            display: inline-block;
+        }
+
+        &--ver {
+            float: right;
+            color: #939DFF;
+            font-size: 12px;
+            background: none;
+            border: none;
+            margin: 10px 0;
+        }
+    }
+
+    &__asegurado {
+        border-bottom: 1px solid #EDEFF5;
+        padding: 0 0 15px;
+
+        &--datos {
+            display: inline-block;
+
+            &--nombre{
+                font-size: 16px;
+                color: #494F66;
+            }
+            &--dni{
+                font-size: 12px;
+                color: #67678f;
+                font-weight: 300;
+                font-family: 'Roboto';
+            }
+        }
+
+        &--opciones {
+            float: right;
+            padding: 10px 0;
+            box-sizing: border-box;
+
+            &--icon{
+                margin: 10px;
+                color: #A9B1D1;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.opcion {
+    width: 80%;
+    margin-left: 10%;
+    color: #939DFF;
+
+    &__mas {
+        display: inline-block;
+        margin: 0 15px 0 0;
+        border: 1px solid #939DFF;
+        border-radius: 50px;
+        padding: 0 6px 3px 6px; 
+    }
+    &__asegurar{
+        display: inline-block;
+        font-size: 14px;
+        text-align: left;
+        padding: 25px 0;
+    }
+    &__cancelar{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

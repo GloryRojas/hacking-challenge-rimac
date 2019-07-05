@@ -1,0 +1,23 @@
+.navpages{
+    margin: 40px 0;
+
+    &__arrow {
+        margin-right: 10px;
+        border: 1px solid #EF3340;;
+        border-radius: 100px;
+        color: #EF3340;;
+        padding: 1px 7px;
+        font-size: 18px; 
+    }
+    
+    &__page{
+        color: #A9B1D1;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+
+        &--actual{
+            color: #EF3340;;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.form{
+    margin: 0 10%;
+
+    &__p {
+        font-size: 18px;
+        color: #494F66;
+    }
+
+    &__question {
+        color:  #494F66;
+        font-size: 15px;
+        margin: 30px 0;
+    }
+
+    &__modificar {
+        text-align: center;
+        color: #939DFF;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 15px;
+    }
+}
+

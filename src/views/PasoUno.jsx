@@ -1,8 +1,21 @@
 import React from 'react';
+import HolaCliente from '../components/HolaCliente';
+import FormAsegurar from '../components/FormAsegurar';
 
 const PasoUno = () => {
     return (
-        <h1>Hola, aqui el paso 2</h1>
+        <>
+            <HolaCliente 
+                pagina={'1'}
+                inicio={'Hola'}
+                name={"Eva,"}
+                final={'cuéntanos sobre ti'}
+                textoinicio={'Puedes protegerlos'}
+                negrita={'por solo S/20 al mes'}
+                textofinal={' por asegurado'}
+            />
+            <FormAsegurar />
+        </>
     )
 };
 
