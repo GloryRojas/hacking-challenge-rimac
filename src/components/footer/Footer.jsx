@@ -3,8 +3,7 @@ import './footer.scss'
 
 const Footer = () => (
     <footer className="footer">
-        <p>&#169; 2018 RIMAC Seguros y Reaseguros</p>
-        <p>Todos los derechos reservados</p>
+        <p>&#169; 2019 RIMAC Seguros y Reaseguros</p>
     </footer>
 );
 

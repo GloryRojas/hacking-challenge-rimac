@@ -1,6 +1,7 @@
 import React from 'react';
 import './form-signin.scss';
 import InputFloat from '../InputFloat';
+import { Link } from 'react-router-dom';
 
 const FormSignIn = () => {
 	return (
@@ -21,7 +22,7 @@ const FormSignIn = () => {
 					<span>Acepto la Política de Envío de <u>Comunicaciones Comerciales.</u></span>
 				</label>
 			</p>
-			<button className="formsign__button">COMENCEMOS</button>
+			<Link to="/pasouno/"><button className="formsign__button">COMENCEMOS</button></Link>
 		</form>
 	);
 };
