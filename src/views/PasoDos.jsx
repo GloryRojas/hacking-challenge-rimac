@@ -1,6 +1,6 @@
 import React from 'react';
-import HolaCliente from '../components/HolaCliente';
-import { Asegurados } from '../components/Asegurados';
+import HolaCliente from '../components/utils/HolaCliente';
+import { Asegurados } from '../components/utils/Asegurados';
 
 const PasoDos = () => {
     return(

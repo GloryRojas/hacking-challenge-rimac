@@ -1,6 +1,6 @@
 import React from 'react';
-import HolaCliente from '../components/HolaCliente';
-import FormAsegurar from '../components/FormAsegurar';
+import HolaCliente from '../components/utils/HolaCliente';
+import FormAsegurar from '../components/formularios/FormAsegurar';
 
 const PasoUno = () => {
     return (

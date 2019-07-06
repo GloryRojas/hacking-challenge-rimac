@@ -1,7 +1,6 @@
 import React from 'react';
-import { InputFloat } from './Inputs';
+import { InputFloat, InputSubmit, InputRadio } from '../inputs/Inputs';
 import './formagregar.scss';
-import { InputRadio } from './Inputs';
 
 const FormAgregar = () => {
     return (
@@ -15,6 +14,7 @@ const FormAgregar = () => {
             <p className="formagregar__genero">GÉNERO</p>
             <InputRadio id={'masculino'} name={'Masculino'}/>
             <InputRadio id={'femenino'} name={'Femenino'}/>
+            <InputSubmit value={'GUARDAR'} state={true}/>
         </form>
     )
 }

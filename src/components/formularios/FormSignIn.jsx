@@ -1,8 +1,7 @@
 import React from 'react';
 import './form-signin.scss';
-import { InputFloat } from '../Inputs';
+import { InputFloat, InputCheck } from '../inputs/Inputs';
 import { Link } from 'react-router-dom';
-import { InputCheck } from '../Inputs';
 
 const FormSignIn = () => {
 	return (

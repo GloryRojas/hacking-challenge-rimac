@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import Intro from './views/Intro';
 import PasoUno from './views/PasoUno';
 import PasoDos from './views/PasoDos';
+import PasoTres from './views/PasoTres';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/" exact component={Intro} />
       <Route path="/pasouno/" exact component={PasoUno} />
       <Route path="/pasodos/" exact component={PasoDos} />
+      <Route path="/pasotres/" exact component={PasoTres} />
       <Footer />
     </Router>
   ); 

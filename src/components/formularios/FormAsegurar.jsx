@@ -1,7 +1,7 @@
 import React from 'react';
 import './formasegurar.scss';
-import { InputFloat } from './Inputs';
-import { InputRadio, InputSubmit } from './Inputs';
+import { InputFloat } from '../inputs/Inputs';
+import { InputRadio, InputSubmit } from '../inputs/Inputs';
 import { Link } from 'react-router-dom';
 
 const FormAsegurar = () => {
@@ -13,7 +13,7 @@ const FormAsegurar = () => {
             <p className="form__question">¿VAS A ASEGURARTE A TI?</p>
             <InputRadio id={'no'} name={<span>No</span>}/>
             <InputRadio id={'si'} name={<span>Sí</span>}/>
-            <InputSubmit value={'CONTINUAR'}/>
+            <InputSubmit value={'CONTINUAR'} arrow={true} route={'/pasodos/'}/>
             <Link to="/" className="form__modificar"><p>Modificar DNI</p></Link>
         </form>
     )
