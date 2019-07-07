@@ -3,28 +3,10 @@ import './asegurados.scss';
 import { InputSubmit } from '../inputs/Inputs';
 import FormAgregar from '../formularios/FormAgregar';
 
-const asegurado = [
-    {
-        nombre: 'Matías',
-        paterno: 'Pinedo',
-        materno: 'Lozano',
-        dni: '76543210',
-        nacimiento: '09/08/2011',
-        id: '1'
-    },
-    {
-        nombre: 'Joaquin',
-        paterno: 'Pinedo',
-        materno: 'Lozano',
-        dni: '76543210',
-        nacimiento: '19/08/2011',
-        id: '2'
-    }
-];
+export const Asegurado = (props) => {
 
-export const Asegurado = () => {
     return(
-        asegurado.map(item=>{
+        props.user.map(item=>{
             return(
                 <div key={item.id} className="asegurados__asegurado">
                     <div className="asegurados__asegurado--datos">
@@ -41,19 +23,20 @@ export const Asegurado = () => {
     )
 }
  
-export const Asegurados = () => {
+export const Asegurados = (props) => {
     const[mostrarTodos, setMostrarTodos] = useState(true);
     const[todos, setTodos] = useState(false);
     const[mostrarForm, setMostrarForm] = useState(false);
 
+    const datos = props.data;
     return(
         <>
         <div className="asegurados">
             <div className="asegurados__p">
-                <p className="asegurados__p--asegurados">ASEGURADOS (01)</p>
+                <p className="asegurados__p--asegurados">ASEGURADOS (0{datos.length})</p>
                 { !mostrarTodos ? <button className="asegurados__p--ver" onClick={()=>setMostrarTodos(!mostrarTodos)}>VER TODOS</button> : ""} 
             </div>
-            { mostrarTodos ? <Asegurado /> : ""}
+            { mostrarTodos ? <Asegurado user={datos}/> : ""}
         </div>
         <div className="opcion">
             { !mostrarForm ? 
@@ -62,7 +45,7 @@ export const Asegurados = () => {
                 <button className="opcion__asegurar" onClick={()=> setTodos(!todos) & setMostrarForm(!mostrarForm) & setMostrarTodos(!mostrarTodos)}>Quiero asegurar a alguien más</button>
             </div>
             : '' }
-            { mostrarForm ? <FormAgregar /> : ''}
+            { mostrarForm ? <FormAgregar objUser={datos}/> : ''}
             { !mostrarForm ? <InputSubmit value={'GUARDAR'} arrow={true} route={'/pasotres/'}/> : ''}
             <p className="opcion__cancelar" onClick={()=>setMostrarForm(!mostrarForm) & setMostrarTodos(true)}>Cancelar</p>
         </div>
