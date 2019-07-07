@@ -27,7 +27,7 @@ const FormSignIn = () => {
 		<form className="formsign">
 			<p className="formsign__title">Protégelos <span className="formsign__title--span">ahora</span></p>
 			<p className="formsign__ingrese">Ingresa los datos del titular.</p>
-			<InputFloat type={'text'} name={"Nro. de Documento"} setData={setDni}/>
+			<InputFloat type={'number'} name={"Nro. de Documento"} setData={setDni}/>
 			<InputFloat type={'text'} name={"Nombre"} setData={setNombre} />
 			<InputCheck  id={'proteccion'} name={<span>Acepto la <u>Política de Protección de Datos Personales</u> y los <u>Términos y Condiciones.</u></span>}/>
 			<InputCheck  id={'politica'} name={<span>Acepto la Política de Envío de <u>Comunicaciones Comerciales.</u></span>}/>

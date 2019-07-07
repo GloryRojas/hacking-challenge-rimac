@@ -9,7 +9,8 @@
         font-size: 32px;
         margin: 0;
         &--nombre{
-            color: #EF3340;;
+            color: #EF3340;
+            text-transform: capitalize;
         }
     }
 

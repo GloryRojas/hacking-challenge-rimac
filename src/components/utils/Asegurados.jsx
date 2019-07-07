@@ -4,16 +4,16 @@ import { InputSubmit } from '../inputs/Inputs';
 import FormAgregar from '../formularios/FormAgregar';
 
 export const Asegurado = (props) => {
-    const[user, setUser] = useState(props.user)
+    const[user, setUser] = useState(props.user.asegurados);
 
     const filterUser = ( id ) => {
-       return setUser(user.asegurados.filter(a => a !== user.asegurados.find(e => e.id === id )));
+       return user.filter(a => a !== user.find(e => e.id === id ));
     }
-
-    console.log(user)
+  
+    props.user.asegurados = user;
 
     return(
-        user.asegurados.map(item=>{
+        user.map(item=>{
             return(
                 <div key={item.id} className="asegurados__asegurado">
                     <div className="asegurados__asegurado--datos">
@@ -22,7 +22,7 @@ export const Asegurado = (props) => {
                     </div>
                     <div className="asegurados__asegurado--opciones">
                         <i className="fas fa-pen asegurados__asegurado--opciones--icon" ></i>
-                        <i className="far fa-trash-alt asegurados__asegurado--opciones--icon" onClick={() => filterUser(item.id)}></i>
+                        <i className="far fa-trash-alt asegurados__asegurado--opciones--icon" onClick={() => setUser(filterUser(item.id))}></i>
                     </div>
                 </div>
             )
@@ -53,7 +53,7 @@ export const Asegurados = (props) => {
             </div>
             : '' }
             { mostrarForm ? <FormAgregar objUser={datos}/> : ''}
-            { !mostrarForm ? <InputSubmit value={'GUARDAR'} arrow={true} route={'/pasotres/'}/> : ''}
+            { !mostrarForm ? <InputSubmit value={'GUARDAR'} arrow={true} route={{pathname: '/pasotres/', state: {info: datos}}}/> : ''}
             <p className="opcion__cancelar" onClick={()=>setMostrarForm(!mostrarForm) & setMostrarTodos(true)}>Cancelar</p>
         </div>
         </>

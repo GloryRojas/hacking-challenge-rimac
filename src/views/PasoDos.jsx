@@ -4,9 +4,6 @@ import { Asegurados } from '../components/utils/Asegurados';
 
 const PasoDos = (props) => {
     const usuarioLog = props.location.state.info;
-
-    console.log(usuarioLog);
-
     return(
         <>
             <HolaCliente 

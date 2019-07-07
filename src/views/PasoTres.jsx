@@ -3,7 +3,9 @@ import HolaCliente from '../components/utils/HolaCliente';
 import Planes from '../components/utils/Planes';
 import FormPagar from '../components/formularios/FormPagar';
 
-const PasoTres = () => {
+const PasoTres = (props) => {
+    const usuarioLog = props.location.state.info;
+    console.log(usuarioLog);
     return (
         <>
             <HolaCliente 
@@ -12,8 +14,8 @@ const PasoTres = () => {
                 name={'pago ideal'}
                 textoinicio={'Decide entre 12 pagos mensuales o solo una cuota al año.'}
             />
-            <Planes />
-            <FormPagar />
+            <Planes data={usuarioLog}/>
+            <FormPagar datos={usuarioLog}/>
         </>
     )
 };

@@ -4,7 +4,7 @@
     font-size: 12px;
     margin: 10px 0;
     line-height: 20px;
-    text-transform: capitalize;
+    box-sizing: border-box;
 
     &__p {
         cursor: pointer;
@@ -36,7 +36,6 @@
 .radio{
     margin: 10px 0;
     padding: 10px 0;
-    text-transform: capitalize;
 
     &__p {
         cursor: pointer;
@@ -82,7 +81,6 @@
     margin: 10px 0;
     color: white;
     background-color: #EF3340;
-    text-transform: capitalize;
 
     &__arrow{
         color: white;
@@ -110,6 +108,7 @@
         box-sizing: border-box;
         color: #494F66;
         margin: 0;
+        font-family: 'Lato';
     }
 
     &__input:disabled {
@@ -122,6 +121,7 @@
         transition: .5s;
         padding: 20px;
         pointer-events: none;
+        font-family: 'Roboto';
     }
     
     &__input:focus ~ &__label,
