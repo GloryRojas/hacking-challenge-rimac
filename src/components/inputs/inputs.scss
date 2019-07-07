@@ -108,6 +108,10 @@
         margin: 0;
     }
 
+    &__input:disabled {
+        background-color: #F7F7FA;
+    }
+
     &__label{
         position: absolute;
         left: 10%;

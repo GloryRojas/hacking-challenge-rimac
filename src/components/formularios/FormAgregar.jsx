@@ -1,21 +1,34 @@
-import React from 'react';
-import { InputFloat, InputSubmit, InputRadio } from '../inputs/Inputs';
+import React, { useState } from 'react';
+import { InputFloat, InputRadio } from '../inputs/Inputs';
 import './formagregar.scss';
 
-const FormAgregar = () => {
+const FormAgregar = (props) => {
+    const[dni, setDni] = useState('');
+    const[nombre, setNombre] =useState('');
+    const[paterno, setPaterno] = useState('');
+    const[materno, setMaterno] = useState('');
+    const[nacimiento, setNacimiento] = useState('');
+    
+    const nuevoUser = {
+        dni, nombre, paterno, materno, nacimiento, "id": nacimiento
+    };
+    console.log(props.objUser);
     return (
-        <form action="" className="formagregar">
-            <p className="formagregar__datos">Datos del asegurado N°2</p>
-            <InputFloat type={'text'} name={'Nro. de Documento'} />
-            <InputFloat type={'text'} name={'Nombre'} />
-            <InputFloat type={'text'} name={'Apellido Paterno'} />
-            <InputFloat type={'text'} name={'Apellido Materno'} />
-            <InputFloat type={'date'} name={'Fecha de Nacimiento'} />
-            <p className="formagregar__genero">GÉNERO</p>
-            <InputRadio id={'masculino'} name={'Masculino'}/>
-            <InputRadio id={'femenino'} name={'Femenino'}/>
-            <InputSubmit value={'GUARDAR'} state={true}/>
-        </form>
+            <form action="" className="formagregar">
+                <p className="formagregar__datos">Datos del asegurado N°{props.objUser.length+1}</p>
+                <InputFloat type={'number'} name={'Nro. de Documento'} setData={setDni}/>
+                <InputFloat type={'text'} name={'Nombre'} setData={setNombre} />
+                <InputFloat type={'text'} name={'Apellido Paterno'} setData={setPaterno}/>
+                <InputFloat type={'text'} name={'Apellido Materno'} setData={setMaterno}/>
+                <InputFloat type={'date'} name={'Fecha de Nacimiento'} setData={setNacimiento}/>
+                <p className="formagregar__genero">GÉNERO</p>
+                <InputRadio id={'masculino'} name={'Masculino'} value={'Masculino'} />
+                <InputRadio id={'femenino'} name={'Femenino'} value={'Femenino'} />
+                <button type="button" className="inputsubmit" onClick={() => props.objUser.push(nuevoUser)}>
+                    GUARDAR
+                    <span className="inputsubmit__arrow"><i className="fas fa-chevron-right"></i></span>
+                </button>
+            </form>
     )
 }
 
