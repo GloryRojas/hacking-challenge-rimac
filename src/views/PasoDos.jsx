@@ -4,8 +4,8 @@ import { Asegurados } from '../components/utils/Asegurados';
 
 const PasoDos = (props) => {
     const usuarioLog = props.location.state.info;
-    const usuario = usuarioLog.asegurados;
-    console.log(usuario)
+
+    console.log(usuarioLog);
 
     return(
         <>
@@ -15,7 +15,7 @@ const PasoDos = (props) => {
                 name={"asegurados"}
                 textoinicio={'Preséntanos a quién vamos a proteger.'}
             />
-            <Asegurados data={usuario}/>
+            <Asegurados data={usuarioLog}/>
         </>
     )
 }

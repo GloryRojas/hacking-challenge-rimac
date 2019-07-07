@@ -49,7 +49,7 @@ export const InputButton = (props) => {
 export const InputFloat = (props) => {
 	return(
 		<div className="inputfloat">
-			<input type={props.type} required="" className="inputfloat__input" onChange={e => props.setData(e.currentTarget.value)} disabled={props.state} />
+			<input type={props.type} required className="inputfloat__input" onChange={e => props.setData(e.currentTarget.value)} disabled={props.state} />
 			<label htmlFor="input" className="inputfloat__label">{props.name}</label>
 		</div>
 	)

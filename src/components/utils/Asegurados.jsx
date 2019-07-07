@@ -4,9 +4,16 @@ import { InputSubmit } from '../inputs/Inputs';
 import FormAgregar from '../formularios/FormAgregar';
 
 export const Asegurado = (props) => {
+    const[user, setUser] = useState(props.user)
+
+    const filterUser = ( id ) => {
+       return setUser(user.asegurados.filter(a => a !== user.asegurados.find(e => e.id === id )));
+    }
+
+    console.log(user)
 
     return(
-        props.user.map(item=>{
+        user.asegurados.map(item=>{
             return(
                 <div key={item.id} className="asegurados__asegurado">
                     <div className="asegurados__asegurado--datos">
@@ -14,8 +21,8 @@ export const Asegurado = (props) => {
                         <p  className="asegurados__asegurado--datos--dni">DNI {item.dni} - F.N {item.nacimiento}</p>
                     </div>
                     <div className="asegurados__asegurado--opciones">
-                        <i className="fas fa-pen asegurados__asegurado--opciones--icon"></i>
-                        <i className="far fa-trash-alt asegurados__asegurado--opciones--icon"></i>
+                        <i className="fas fa-pen asegurados__asegurado--opciones--icon" ></i>
+                        <i className="far fa-trash-alt asegurados__asegurado--opciones--icon" onClick={() => filterUser(item.id)}></i>
                     </div>
                 </div>
             )
@@ -33,7 +40,7 @@ export const Asegurados = (props) => {
         <>
         <div className="asegurados">
             <div className="asegurados__p">
-                <p className="asegurados__p--asegurados">ASEGURADOS (0{datos.length})</p>
+                <p className="asegurados__p--asegurados">ASEGURADOS (0{datos.asegurados.length})</p>
                 { !mostrarTodos ? <button className="asegurados__p--ver" onClick={()=>setMostrarTodos(!mostrarTodos)}>VER TODOS</button> : ""} 
             </div>
             { mostrarTodos ? <Asegurado user={datos}/> : ""}
