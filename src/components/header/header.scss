@@ -1,8 +1,18 @@
 .header {
     background-color: #EF3340;
+    border-bottom: 1px solid #F55D68;
 
     &__img{
         width: 100px;
         margin: 10px 32px;
+    }
+}
+@media (min-width: 768px){
+    .header{
+        width: 55%;
+
+        &__img{
+            margin: 10px 143px;
+        }
     }
 }

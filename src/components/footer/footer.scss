@@ -7,3 +7,8 @@
     font-weight: 300;
     padding: 20px 10%;
 }
+@media (min-width: 768px){
+    .footer{
+        display: none;
+    }
+}

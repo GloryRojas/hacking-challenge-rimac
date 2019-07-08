@@ -32,3 +32,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 768px){
+  .container{
+      width: 35%;
+      margin-left: 10%;
+      display: inline-block;
+  }
+}
