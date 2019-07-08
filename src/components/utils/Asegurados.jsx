@@ -52,7 +52,7 @@ export const Asegurados = (props) => {
                 <button className="opcion__asegurar" onClick={()=> setTodos(!todos) & setMostrarForm(!mostrarForm) & setMostrarTodos(!mostrarTodos)}>Quiero asegurar a alguien más</button>
             </div>
             : '' }
-            { mostrarForm ? <FormAgregar objUser={datos}/> : ''}
+            { mostrarForm ? <FormAgregar objUser={datos} mostrar={setMostrarForm} mostrarTodos={setMostrarTodos} tipo={mostrarForm}/> : ''}
             { !mostrarForm ? <InputSubmit value={'CONTINUAR'} arrow={true} route={{pathname: '/pasotres/', state: {info: datos}}}/> : ''}
             <p className="opcion__cancelar" onClick={()=>setMostrarForm(!mostrarForm) & setMostrarTodos(true)}>Cancelar</p>
         </div>

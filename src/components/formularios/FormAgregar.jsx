@@ -23,7 +23,7 @@ const FormAgregar = (props) => {
                 <p className="formagregar__genero">GÉNERO</p>
                 <InputRadio id={'masculino'} name={'Masculino'} value={'Masculino'} />
                 <InputRadio id={'femenino'} name={'Femenino'} value={'Femenino'} />
-                <button type="button" className="inputsubmit" onClick={() => props.objUser.asegurados.push(nuevoUser)}>
+                <button type="button" className="inputsubmit" onClick={() => props.objUser.asegurados.push(nuevoUser) & props.mostrar(!props.tipo) & props.mostrarTodos(true)}>
                     GUARDAR
                     <span className="inputsubmit__arrow"><i className="fas fa-chevron-right"></i></span>
                 </button>

@@ -5,10 +5,13 @@ import { InputFloat } from '../inputs/Inputs';
 
 const Planes = (props) => {
     const[mostrar, setMostrar] = useState(false);
+
+    let aPagar = props.data.asegurados.length*20;
+    
     return (
         <>
         <div className="planes">
-            <input type="radio" id="fijo" className="planes__input" name="planes"/>
+            <input type="radio" id="fijo" className="planes__input" name="planes" />
             <label htmlFor="fijo" className="planes__box">
                 <p className="planes__box--check">✓</p>
                 <p className="planes__box--monto">MONTO FIJO</p>
@@ -29,7 +32,7 @@ const Planes = (props) => {
             <div className="planes__pagar">
                 <p className="planes__pagar--total">PAGO TOTAL MENSUAL</p>
                 <p className="planes__pagar--asegurados">Por {props.data.asegurados.length} asegurados <span className="planes__pagar--detalle"> DETALLE</span></p>
-                <p className="planes__pagar--cash"><span className="planes__pagar--cash--simbolo">S/ </span>40</p>
+                <p className="planes__pagar--cash"><span className="planes__pagar--cash--simbolo">S/ </span>{aPagar}</p>
             </div>
             { mostrar ? 
             <div>
