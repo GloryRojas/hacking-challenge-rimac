@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "837e186d0d5e20d9b161bbf4c4a53766",
+    "revision": "bec43ae74ce40fb5f67882cefa9da91a",
     "url": "/hacking-challenge-rimac/index.html"
   },
   {
-    "revision": "32d70ac910aefa3404e3",
-    "url": "/hacking-challenge-rimac/static/css/main.4d1f6349.chunk.css"
+    "revision": "fb44bf3848fee3f081c1",
+    "url": "/hacking-challenge-rimac/static/css/main.cf6ccce4.chunk.css"
   },
   {
     "revision": "9f436638f58d69061378",
     "url": "/hacking-challenge-rimac/static/js/2.4fa462dc.chunk.js"
   },
   {
-    "revision": "32d70ac910aefa3404e3",
-    "url": "/hacking-challenge-rimac/static/js/main.e0b633ab.chunk.js"
+    "revision": "fb44bf3848fee3f081c1",
+    "url": "/hacking-challenge-rimac/static/js/main.9a9525db.chunk.js"
   },
   {
     "revision": "f40170edb100bf4b5e27",
