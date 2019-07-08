@@ -118,22 +118,9 @@
             padding: 14px 18px;
             color: white;
             border-radius: 6px;
-            position: absolute;
-            right: 12%;
-            top: 97.5%;
             display: inline;
         }
     }
 }
 
-@media ( min-width: 768px){
-    .planes{
-        &__descuento{
-            &--button{
-                left: 74%;
-                top: 90.3%;
-            }
-        }
-    }
-}
 

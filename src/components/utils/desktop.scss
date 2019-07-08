@@ -1,8 +1,30 @@
+.desktop{
+    background-color: #FAFAFC;
+    &__img{
+        width: 0;
+    }
+    &__florero{
+        width: 0;
+    }
+}
+
 @media (min-width: 768px){
     .desktop {
-        background-color: #EF3340;
-        height: 100vh;
-        width: 40%;
+        background-image: url('https://user-images.githubusercontent.com/45082443/60709231-8d752c80-9ed5-11e9-8be4-c27150d706f6.png');
+        width: 418px;;
         float: left;
+        height: -webkit-fill-available;
+
+        &__img {
+            width: 80%;
+            margin: 20% 0 0 50%;
+            display: block;
+        }
+        &__florero {
+            position: absolute;
+            width: 8%;
+            top: 70%;
+            left: 35%;
+        }
     }
 }

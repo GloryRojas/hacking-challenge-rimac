@@ -53,7 +53,7 @@ export const Asegurados = (props) => {
             </div>
             : '' }
             { mostrarForm ? <FormAgregar objUser={datos}/> : ''}
-            { !mostrarForm ? <InputSubmit value={'GUARDAR'} arrow={true} route={{pathname: '/pasotres/', state: {info: datos}}}/> : ''}
+            { !mostrarForm ? <InputSubmit value={'CONTINUAR'} arrow={true} route={{pathname: '/pasotres/', state: {info: datos}}}/> : ''}
             <p className="opcion__cancelar" onClick={()=>setMostrarForm(!mostrarForm) & setMostrarTodos(true)}>Cancelar</p>
         </div>
         </>

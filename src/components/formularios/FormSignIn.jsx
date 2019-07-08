@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './form-signin.scss';
-import { InputFloat, InputCheck } from '../inputs/Inputs';
+import { InputCheck } from '../inputs/Inputs';
 import { Link } from 'react-router-dom';
 
 const FormSignIn = () => {
