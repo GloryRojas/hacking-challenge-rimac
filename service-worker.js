@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hacking-challenge-rimac/precache-manifest.da26e75cfb44de3f59134993ca4dec85.js"
+  "/hacking-challenge-rimac/precache-manifest.f09e91edaad05e598ccebe4f8354f654.js"
 );
 
 self.addEventListener('message', (event) => {

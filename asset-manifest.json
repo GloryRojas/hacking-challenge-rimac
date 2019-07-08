@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hacking-challenge-rimac/static/css/main.cf6ccce4.chunk.css",
-    "main.js": "/hacking-challenge-rimac/static/js/main.9a9525db.chunk.js",
-    "main.js.map": "/hacking-challenge-rimac/static/js/main.9a9525db.chunk.js.map",
+    "main.js": "/hacking-challenge-rimac/static/js/main.41c7288e.chunk.js",
+    "main.js.map": "/hacking-challenge-rimac/static/js/main.41c7288e.chunk.js.map",
     "runtime~main.js": "/hacking-challenge-rimac/static/js/runtime~main.6bdb7c9e.js",
     "runtime~main.js.map": "/hacking-challenge-rimac/static/js/runtime~main.6bdb7c9e.js.map",
     "static/js/2.4fa462dc.chunk.js": "/hacking-challenge-rimac/static/js/2.4fa462dc.chunk.js",
     "static/js/2.4fa462dc.chunk.js.map": "/hacking-challenge-rimac/static/js/2.4fa462dc.chunk.js.map",
     "index.html": "/hacking-challenge-rimac/index.html",
-    "precache-manifest.da26e75cfb44de3f59134993ca4dec85.js": "/hacking-challenge-rimac/precache-manifest.da26e75cfb44de3f59134993ca4dec85.js",
+    "precache-manifest.f09e91edaad05e598ccebe4f8354f654.js": "/hacking-challenge-rimac/precache-manifest.f09e91edaad05e598ccebe4f8354f654.js",
     "service-worker.js": "/hacking-challenge-rimac/service-worker.js",
     "static/css/main.cf6ccce4.chunk.css.map": "/hacking-challenge-rimac/static/css/main.cf6ccce4.chunk.css.map"
   }
