@@ -18,7 +18,8 @@ const Carousel = () => {
 				<p className="carousel__article--footer escritorio">&#169; 2018 RIMAC Seguros y Reaseguros.</p>
 			</article>
 			<aside className="carousel__aside">
-				<img src="https://user-images.githubusercontent.com/45070947/60694621-4884d200-9ea4-11e9-9622-cb4dc66823ae.jpg" alt="" className="carousel__aside--img"/>
+				<img src="https://user-images.githubusercontent.com/45070947/60694621-4884d200-9ea4-11e9-9622-cb4dc66823ae.jpg" alt="" className="carousel__aside--img mobile"/>
+				<img src="https://user-images.githubusercontent.com/45070947/60775683-33e64b00-a0eb-11e9-81d2-888b02f608de.png" alt="" className="carousel__aside--img-desktop escritorio"/>
 			</aside>
 		</div>
 	)

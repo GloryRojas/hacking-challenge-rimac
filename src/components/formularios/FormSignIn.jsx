@@ -27,8 +27,14 @@ const FormSignIn = () => {
 		<form className="formsign">
 			<p className="formsign__title">Protégelos <span className="formsign__title--span">ahora</span></p>
 			<p className="formsign__ingrese">Ingresa los datos del titular.</p>
-			<InputFloat type={'number'} name={"Nro. de Documento"} setData={setDni}/>
-			<InputFloat type={'text'} name={"Nombre"} setData={setNombre} />
+			<div className="formsign__inputfloat">
+				<input className="formsign__inputfloat--input" type="text" id='input' required onChange={e => setDni(e.currentTarget.value)}/>
+				<label className="formsign__inputfloat--label" htmlFor="input">Nro. de Documento</label>
+			</div>
+			<div className="formsign__inputfloat">
+				<input className="formsign__inputfloat--input" type="text" id='input' required onChange={e => setNombre(e.currentTarget.value)}/>
+				<label className="formsign__inputfloat--label" htmlFor="input">Nombre</label>
+			</div>
 			<InputCheck  id={'proteccion'} name={<span>Acepto la <u>Política de Protección de Datos Personales</u> y los <u>Términos y Condiciones.</u></span>}/>
 			<InputCheck  id={'politica'} name={<span>Acepto la Política de Envío de <u>Comunicaciones Comerciales.</u></span>}/>
 			<Link to={{pathname: "/pasouno/", state: {info: persona}}}><button className="formsign__button">COMENCEMOS</button></Link>
