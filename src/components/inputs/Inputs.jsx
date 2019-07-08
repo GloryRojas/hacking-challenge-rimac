@@ -54,12 +54,3 @@ export const InputFloat = (props) => {
 		</div>
 	)
 };
-
-export const InputDscto = () => {
-    return (
-        <div>
-            <input type="text"/>
-            <button></button>
-        </div>
-    )
-}

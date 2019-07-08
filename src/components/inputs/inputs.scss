@@ -1,3 +1,5 @@
+// Estilos para el input tipo check
+
 .input{
     color: #A9B1D1;
     font-weight: 300;
@@ -32,6 +34,9 @@
         content: "✓";
     }
 }
+
+
+// Estilos para el input tipo radio
 
 .radio{
     margin: 10px 0;
@@ -70,6 +75,8 @@
 }
 
 
+// Estilos para el input tipo submit
+
 .inputsubmit {
     width: 100%;
     border: none;
@@ -91,6 +98,8 @@
     background-color: #EDEFF5;
     color: #D4D5E8;
 }
+
+// Estilos para los inputs texto con label animado
 
 .inputfloat{
     box-sizing: border-box;
@@ -117,7 +126,7 @@
 
     &__label{
         position: absolute;
-        left: 10%;
+        left: 8%;
         transition: .5s;
         padding: 20px;
         pointer-events: none;
@@ -128,5 +137,14 @@
     &__input:valid ~ &__label{ 
         padding: 8px 0 0 20px;
         font-size: 12px;
+    }
+}
+
+@media (min-width : 768px ){
+    .inputfloat {
+
+        &__label{
+            left: 53%;
+        }
     }
 }

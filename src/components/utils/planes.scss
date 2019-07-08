@@ -113,16 +113,26 @@
     &__descuento {
 
         &--button {
-            width: 90px;
-            height: 40px;
             background-color:#EF3340; 
             border: none;
-            padding: 10px;
+            padding: 14px 18px;
             color: white;
             border-radius: 6px;
             position: absolute;
-            top: 605px;
-            left: 242px;
+            right: 12%;
+            top: 97.5%;
+            display: inline;
+        }
+    }
+}
+
+@media ( min-width: 768px){
+    .planes{
+        &__descuento{
+            &--button{
+                left: 74%;
+                top: 90.3%;
+            }
         }
     }
 }

@@ -27,7 +27,7 @@
     }
     &__label{
         position: absolute;
-        left: 10%;
+        left: 8%;
         transition: .5s;
         padding: 20px;
         color:  #A9B1D1;
@@ -39,7 +39,7 @@
     
     &__label--cvv{
         position: absolute;
-        left: 50%;
+        left: 47%;
         transition: .5s;
         padding: 20px;
         color:  #A9B1D1;;
@@ -65,5 +65,16 @@
     }
 }
 
+@media (min-width : 768px ){
+    .formpagar {
 
+        &__label{
+            left: 53%;
+        }
+
+        &__label--cvv{
+            left: 67%;
+        }
+    }
+}
     
